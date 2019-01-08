@@ -13,6 +13,7 @@
        			$all = $connection->query('SELECT * FROM comment ORDER BY (-date) ASC LIMIT 5 OFFSET 0')->fetchAll();
        		}
 
+
         if(isset($_POST['name']) && isset($_POST['comment']) && $_POST['comment']!="" && $_POST['name']!="")
 			{
 				$_SESSION['as'] = 1;
