@@ -31,7 +31,7 @@
 		$forCount = $connection->query('SELECT * FROM comment')->fetchAll();
 		$count = count($forCount);	
 		$s = (int)($count/5);
-		var_dump($s);
+
 	  	
 ?>
 
