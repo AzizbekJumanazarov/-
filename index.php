@@ -31,6 +31,7 @@
 		$forCount = $connection->query('SELECT * FROM comment')->fetchAll();
 		$count = count($forCount);	
 		$s = (int)($count/5);
+		var_dump($s);
 	  	
 ?>
 
@@ -140,7 +141,7 @@
   						echo '</a>';
 					    echo '</li>'; 
 				  }
-				  else{
+				  else if(!isset($_GET['id'])){
 				     	echo '<li class="page-item">';
 				 	 	echo '<a class="page-link" href="index.php?id=';
 				 	 	echo 2;
@@ -149,6 +150,7 @@
   						echo '</a>';
 					    echo '</li>';   	
 				  }
+				  else{}
 
 
 				?>
